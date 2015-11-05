@@ -1,0 +1,731 @@
+:root {
+    background: #f9f9f9;
+}
+/*------------------------header--------------------------*/
+
+#header {
+    display:flex;
+    align-items: center;
+}
+
+body > header > div > img {
+    order: 1;
+}
+
+body > header > div > h1 {
+    order: 2;
+    margin-left: 2em;
+    flex-grow: 2;
+}
+
+.to-profile {
+    order: 4;
+    margin-left: auto;
+    font-size: .8em;
+}
+
+body > header > div > form {
+    order: 3;
+    margin-right: 3em;
+}
+
+body > header > nav {
+    order: 6;
+}
+
+body > header > nav > ul{
+    display:flex;
+    justify-content:flex-start;
+    padding: 0.1%;
+    list-style: none;
+}
+
+body > header > nav > ul > li {
+    margin-right: 1%;
+}
+
+body > header a:link {
+    text-decoration: none;
+}
+
+
+/*------------------------main--------------------------*/
+
+main > h1 {
+    margin-left: .6em;
+}
+
+h3, h2, h4, p, dt {
+    margin-left: 2%
+}
+
+.one {
+    display: flex;
+    flex-direction: column;
+    margin-left: -3%;
+}
+
+.displaynone {
+    display:none;
+}
+
+a:visited, a:link {
+    color: #323232;
+}
+
+legend {
+    font-weight: 600;
+}
+
+#footersearch {
+    width: 7em;
+    hight: .8em;
+    font-size: .6em;
+    margin-top: -3em;
+}
+
+#inputfooter, picture {
+    margin-left: 1em;
+}
+
+em {
+    margin-left: .2em;
+}
+
+/*------------------------fonts--------------------------*/
+
+
+h1 {
+    font-family: "Avenir", Helvetica, sans-serif;
+    font-size: 1.3em;
+}
+
+h2 {
+    font-family: "Avenir", Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+
+h3 {
+    font-family: "Avenir", Helvetica, sans-serif;
+    font-size: 1.1em;
+}
+
+h4 {
+    font-family: "Avenir", Helvetica, sans-serif;
+    font-size: 1.05em;
+}
+
+h5 {
+    font-family: "Avenir", Helvetica, sans-serif;
+    font-size: 1.02em;
+}
+
+p + label{
+    font-family: "Avenir", Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 140%;
+}
+
+label {
+    font-family: "Avenir", Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+li {
+    font-family: "Avenir", Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 140%;
+}
+
+p {
+    font-family: "Avenir", Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 140%;
+    margin: 2%;
+}
+
+legend, span, em {
+    font-family: "Avenir", Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 140%;
+}
+
+dt, dd {
+    font-family: "Avenir", Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 140%;
+}
+
+
+/*-----------------------------------portrait phone--------------------------------*/
+
+@media screen and (max-width:29.9999em) {
+
+
+    header > div > h1 {
+        display: none;
+    }
+
+    .to-profile {
+        display: none;
+    }
+
+    body > header > div > form {
+        display: none;
+    }
+
+    p {
+        font-size: .8em;
+    }
+
+    p + label {
+        font-size: .8em;
+    }
+
+    li, dt, dd {
+        font-size: .8em;
+    }
+
+
+    .to-profile {
+        width: 100%;
+    }
+
+    body > header > form {
+        width: 100%;
+    }
+
+    .img_mobile {
+        display:block;
+        width: 4em;
+        height: 4em;
+    }
+
+    .img_full {
+        display: none;
+    }
+
+    body header nav ul {
+        flex-direction: column;
+        margin-right: 40%;
+        padding: 1%;
+    }
+
+    body header nav ul li:active {
+        background-color: #f9a21a;
+    }
+
+    body header nav ul li {
+        border: .1em solid #323232;
+        margin: 2%;
+        padding: 4%;
+        box-shadow: 2px 2px 1px #888888;
+    }
+
+    #hamburger {
+        max-width: 3em;
+        margin-left: .6em;
+    }
+
+    #search {
+        max-width:2em;
+        margin-left: 7em;
+    }
+
+    #profile {
+        max-width:2em;
+        margin-left: 1.5em;
+    }
+
+    #header {
+        background-color: #323232;
+        padding:1em;
+    }
+
+    main article section img {
+        max-width: 20em;
+    }
+
+    .een {
+        flex-wrap: wrap;
+    }
+
+    #sitemap > ul {
+        flex-direction: column;
+    }
+
+    #sitemap * li {
+        margin: .6em;
+        font-size: .9em;
+    }
+
+    .related {
+        flex-direction: column;
+    }
+
+    /*-----------------form-phone--------------------*/
+
+
+    fieldset {
+        border:0;
+    }
+
+    input[type=submit] {
+        background-color: #f9a21a;
+        width: 8em;
+        height: 3em;
+        font-size: .8em;
+        margin-left: .7em;
+    }
+
+    textarea {
+        width: 25em;
+        height: 5em;
+        border: 1px solid #D0D0D0;
+    }
+
+    label {
+        margin: 0.5%;
+        padding: 0.5%;
+    }
+
+    legend, span, input, textarea {
+        margin: .3em;
+
+    }
+
+    form div fieldset label  {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .radiocheckbox {
+        flex-direction: row;
+    }
+
+
+    form div fieldset label input {
+        flex-wrap: wrap;
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"]{
+        min-width:20em;
+        height: 2em;
+        border: 1px solid #D0D0D0;
+    }
+
+    input[type="date"] {
+        width:10em;
+        height: 2em;
+        border: 1px solid #D0D0D0;
+    }
+
+
+
+
+
+    /*--------------------------------------*/
+
+    picture img {
+        max-width: 20em;
+    }
+
+    .displaynone2 {
+        display:none;
+    }
+}
+
+
+/*------------------------------------tablet------------------------------------*/
+
+@media screen and (min-width:30em) and (max-width:59.9999em) {
+
+
+    header > div > h1 {
+        display: none;
+    }
+
+    .to-profile {
+        display: none;
+    }
+
+    body > header > div > form {
+        display: none;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    p + label {
+        font-size: 1em;
+    }
+
+    li, dt, dd {
+        font-size: 1em;
+    }
+
+
+    .to-profile {
+        width: 100%;
+    }
+
+    body > header > form {
+        width: 100%;
+    }
+
+    .img_mobile {
+        display:block;
+        width: 4em;
+        height: 4em;
+    }
+
+    .img_full {
+        display: none;
+    }
+
+    body header nav ul {
+        flex-direction: column;
+        margin-right: 40%;
+        padding: 1%;
+        max-width: 15em;
+    }
+
+    body header nav ul li {
+        border: .1em solid #323232;
+        margin: 2%;
+        padding: 4%;
+        box-shadow: 2px 2px 1px #888888;
+    }
+
+    body header nav ul li:active {
+        background-color: #f9a21a;
+    }
+
+    #hamburger {
+        width: 3.5em;
+        margin-left: 3em;
+    }
+
+    #search {
+        width:2.5em;
+        margin-left: 25em;
+
+    }
+
+    #profile {
+        width:2.5em;
+        margin-left: 3em;
+
+    }
+
+    #header {
+        background-color: #323232;
+        padding:1em;
+    }
+
+    .displaynone2 {
+        display:none;
+    }
+
+      /*-----------------form---------------------*/
+
+    fieldset {
+        border:0;
+        margin: 1em;
+    }
+
+    input[type=submit] {
+        background-color: #f9a21a;
+        width: 8em;
+        height: 3em;
+        font-size: .8em;
+        margin-left: .7em;
+        margin-top: 4.5em;
+    }
+
+    textarea {
+        min-width: 25em;
+        max-width: 35em;
+        height: 5em;
+        border: 1px solid #D0D0D0;
+    }
+
+    label {
+        margin: 0.5%;
+        padding: 0.5%;
+    }
+
+    legend, span, input, textarea {
+        margin: .3em;
+    }
+
+    form div fieldset label  {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .radiocheckbox {
+        flex-direction: row;
+    }
+
+
+    form div fieldset label input {
+        flex-wrap: wrap;
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"]{
+        min-width:25em;
+        max-width: 35em;
+        height: 2em;
+        border: 1px solid #D0D0D0;
+    }
+
+    input[type="date"] {
+        width:10em;
+        height: 2em;
+        border: 1px solid #D0D0D0;
+    }
+
+
+    /*-------------------------------------*/
+
+    picture img {
+        max-width: 30em;
+    }
+
+    .one {
+        flex-wrap: wrap;
+    }
+
+    .related {
+        flex-direction: column;
+    }
+
+    #sitemap > ul {
+        flex-direction: column;
+    }
+
+
+}
+
+/*------------------------------------normal monitor-------------------------------------*/
+
+
+@media screen and (min-width:60em) {
+
+    body > header {
+        background-color: #323232;
+        padding:1em;
+        padding-bottom: .3em;
+        color: #efefee;
+    }
+
+    header a:visited{
+        color: #efefee;
+    }
+
+    header a:hover {
+        color: #f9a21a;
+    }
+
+    .img_full {
+        display:block;
+        width: 4em;
+        height: 4em;
+    }
+
+    .img_full:hover {
+        transform: rotate(180deg);
+    }
+
+    .img_mobile {
+        display: none;
+    }
+
+    body header nav ul li {
+        border: .1em solid #efefee;
+        padding: 1%;
+        color: #efefee;
+    }
+
+    body header nav ul li:hover {
+        border: .1em solid #f9a21a;
+    }
+
+
+    body header nav ul :hover {
+        color:#f9a21a;
+        cursor: pointer;
+    }
+
+
+    body header nav ul {
+        margin-top: 1.5em;
+        margin-right: 2.5em;
+    }
+
+    #hamburger {
+        display:none;
+    }
+
+    #search {
+        display: none;
+    }
+
+    #profile {
+        width:1.5em;
+        order: 4;
+        margin-right: .5em;
+        cursor: pointer;
+    }
+
+    a:visited, a:link {
+        color: #323232;
+    }
+
+    a:hover {
+        color:#f9a21a;
+    }
+
+    header a:visited {
+        color: #efefee;
+    }
+
+/*-------------------formulier-------------------------------*/
+
+    input[type=submit]:hover {
+        background-color: #FACC2E;
+        cursor: pointer;
+    }
+
+    input[type=submit] {
+        margin-left: 3%;
+        background-color: #f9a21a;
+        width: 7em;
+        height: 2em;
+        font-size: 0.8em;
+        cursor: pointer;
+    }
+
+    fieldset {
+        border:0;
+    }
+
+    textarea {
+        height: 6em;
+        width: 35em;
+        border: 1px solid #D0D0D0;
+    }
+
+    label {
+        margin: .5%;
+        padding: .5%;
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"]{
+        width:35em;
+        height: 2em;
+        border: 1px solid #D0D0D0;
+    }
+
+    input[type="date"] {
+        width:15em;
+        height: 2em;
+        border: 1px solid #D0D0D0;
+    }
+
+    form div  fieldset  label  {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .radiocheckbox {
+        flex-direction: row;
+    }
+
+    form div fieldset label input {
+        flex-wrap: wrap;
+    }
+
+     .one {
+        margin-left: .1em;
+    }
+
+/*-------------------------------------------------*/
+
+
+   .een {
+        display: flex;
+    }
+
+    form {
+        max-width: 40em;
+    }
+
+
+    main article section img {
+        width: 30em;
+        height: auto;
+    }
+
+    aside {
+        padding: 1%;
+        margin: 1%;
+        flex: 1;
+        min-width: 25em;
+        margin-left: 7em;
+    }
+
+    #voorbeeld {
+        margin-left: 2%;
+        margin-top: 5%;
+    }
+
+
+/*--------------------------------------------------*/
+
+    .related {
+        display: flex;
+        flex: 1;
+        padding: 1%;
+        margin: 1%;
+    }
+
+    .related > article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .related p {
+        min-width: 20em;
+    }
+
+    picture img {
+        max-width: 40em;
+        margin: 2%;
+    }
+
+    h2 {
+        margin: 2%;
+    }
+
+    #inputfooter {
+        margin-left: 4%;
+    }
+
+
+/*-----------------------footer---------------------------*/
+
+    #sitemap > ul {
+    display: flex;
+    justify-content: space-around;
+    }
+
+    #contact > p {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
